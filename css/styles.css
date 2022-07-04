@@ -237,6 +237,7 @@ color: var(--logo-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    transition: color 250ms var(--timing-function);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -367,7 +368,7 @@ color: var(--logo-color);
     height: 44px;
     border-radius: 50%;
     transition: color 250ms var(--timing-function),
-    backround-color 250ms var(--timing-function);
+    background-color 250ms var(--timing-function);
 
 }
 
@@ -554,20 +555,21 @@ margin-right: 10px;
 
 .modal-close-button {
     position: absolute;
-    right: 0;
+    right: 8px;
+    top: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px;
     padding: 0;
-
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     background-color: var(--text-color);
+    border-radius: 50%;
+    padding: 8px;
 }
 
 .icon-close {
-    fill: white;
+  
     color: #000;
     transition: fill 250ms var(--timing-function);
 }
@@ -617,6 +619,7 @@ margin-right: 10px;
     text-align: center;
     cursor: pointer;
     background-color: #F5F4FA;
+    transition: color 250ms var(--timing-function), background-color 250ms  var(--timing-function);
 }
 
 .work:hover,
@@ -638,6 +641,7 @@ margin-right: 10px;
 .portfolio-link:hover,
 .portfolio-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms var(--timing-function);
 }
 .portfolio-thumb {
     position: relative;
@@ -651,7 +655,7 @@ margin-right: 10px;
     top: 0;
     left: 0;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms var(--timing-function);
 }
 
